@@ -1,5 +1,5 @@
 import React , {useState} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import {SidebarData} from './SidebarData';
@@ -15,11 +15,22 @@ function Navbar() {
   return (
     <>
     <IconContext.Provider value={{color:'fff'}}>
+
     <div className='navbar'>
+ 
+      
         <Link to="#" className='menu-bars'>
             <FaIcons.FaBars  onClick={showSidebar}/>
+           
         </Link>
+        
+        <div className='header_left' >
+           
+            <h2 > Eye Controlled Game For The Disabled people Manual</h2>
+        
     </div>
+    </div>
+    
     
       <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
        <ul className='nav-menu-item' onClick={showSidebar}>
@@ -34,17 +45,23 @@ function Navbar() {
                <Link to={item.path}>
                  {item.icon}
                  <span>{item.title}</span>
+                 
+                
                </Link>
+              
+              
              </li>
            );
          })}
        </ul>
-
+      
       </nav>
       </IconContext.Provider>
 
 
     </>
+
+   
   )
 }
 

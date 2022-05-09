@@ -1,12 +1,16 @@
 
-
+.header_left{
+    color:aliceblue;
+    margin-left:13cm;
+}
 .navbar {
+    
     background-color:#060b26;
     height: 80px;
    
      display: flex;
     justify-content:start;
-    align-items: center;
+     align-items: center; 
 }
 
 .menu-bars{

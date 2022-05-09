@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { Component } from 'react'
+//import axios from 'axios'
 
-function Home() {
-  return (
-    <div className='home'>
-        <h1>Home</h1>
-    </div>
-  )
+class Home extends Component{
+
+ 
+ 
+
+  // componentDidMount(){
+  //   axios.get("https://api.github.com/users/ariv797/repos")
+  //   .then(res => {
+  //     console.log(res)
+  //   })
+ 
+ // }  
+  render () {
+
+    return(
+      <div className='home'>
+        <h1>Eman Alsayed</h1>
+      </div>
+    )
+  }
 }
 
 export default Home
