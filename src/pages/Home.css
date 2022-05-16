@@ -1,0 +1,27 @@
+
+.project{
+   background-color:bisque;
+  
+     align-items: center;  
+}
+
+.eman{
+    color: brown;
+    align-items:center;
+}
+
+
+    table, th, td {
+        border:1px solid black;
+      
+      }
+
+      .table{
+        
+          width: 80%;
+      }
+      .disc{
+          
+          width: 70%;
+      }
+     
