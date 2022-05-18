@@ -1,23 +1,4 @@
-/* /* .table{
-    border-collapse: collapse;
-    max-width: 90.0px; 
-    /* width: 400 px; */
-    /* margin: 15rem auto; */
-/* }  */ 
 
-
- /* table th,table td {
- 
-    background-color:rgba(233, 150, 122, 0.471);
-    color: black;
-    width: 100%;
-    text-align: left; 
-    border: 1px solid #060b26;
-     padding: 10px;
-    
- 
-
-}  */
 .table {
      table-layout:fixed;
     background-color:rgba(233, 150, 122, 0.471);
@@ -30,31 +11,16 @@
     padding: 2px ;
     margin-right: auto;
     margin-left: auto;
-    
-
-    
   
-    
- 
-
   }
   
-  table th,table td,table tr  {
+  table th,table td,table tr  
+  {
     border: 1px solid #260606;
     height:20px;
     overflow:hidden;
     white-space: normal;
     text-overflow: ellipsis ;
-    
-   
   }
-
-/* .height{
-    height: 20px;
-} */
-/* 
-.height{
-    height: 20px;
-} */
 
 
