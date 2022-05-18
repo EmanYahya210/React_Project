@@ -1,55 +1,85 @@
-
+import React from "react";
+import axios from "axios";
+import {useState,useEffect} from 'react';
 import './Home.css'
 
- const Home = () => {
+
+
+
+
+function Home() {
+  const [getData, setgetData]=useState([])
+
+  useEffect(() =>{
+    axios.get("https://api.github.com/users/ariv797/repos")
+    .then(showData =>{
+      console.log(showData)
+      setgetData(showData.data)
+    })
+  
+  })
+
   return (
-   
-      <table>
-      <thead>
-        <tr>
-          <th>Project Name</th>
-          <th>Language</th>
-          <th>Discription</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-      </table>
-   
-  )
-}
-
-export default Home
-
-
-
-
-
-
-// function Home() {
-
-
-
-//   return (
-// <div>
+<div>
       
 
 
-//  <table className='table'>
+ <table className='table' >
          
-//   <tr>
-//     <th>Project Name</th>
-//     <th>Language</th>
-//     <th className='disc'>Discription</th>
-//   </tr>
+  
+  <tr>
+    <th>Project Name</th>
+    <th>Language</th>
+    <th> Description</th>
+   
+  </tr>
+
+    { getData.map(dataItem => (  <tr><td  key={dataItem.id}>{dataItem.name}</td>
+    <td key={dataItem.id}>{dataItem.language || "-"}</td>
+    <td key={dataItem.id}>{dataItem.description || "-"}</td>
+    </tr>))}
+
+     {/* { getData.map(dataItem => (<ul key={dataItem.id}> */}
+      
+      {/* <td>{dataItem.name}</td> */}
+   
+    {/* </ul> ))}
  
-//   <tr>
-//     <td>" " </td>
-//     <td>" "</td>
-//     <td>" "</td>
-//   </tr>
+     { getData.map(dataItem => (<ul key={dataItem.id}><td>{dataItem.name}</td></ul>))}
+    
+    </tr> */}
+     
+  {/* ))}
+        { getData.map(dataItem => (<ul key={dataItem.id}>
+      <td>{dataItem.id}</td>
+    </ul> 
+     ))}
+          { getData.map(dataItem => (<ul key={dataItem.id}>
+      <td>{dataItem.name}</td>
+    </ul>  */}
+     
  
 
-//   </table>
+  {/* <ul>
+  <div className='project'>
+    
+  
+  
+    
+    
+  </tr>
+  
+  
+  </div>
+  </ul> */}
+  {/* <tr>
+    <td>" " </td>
+    <td>" "</td>
+    <td>" "</td>
+  </tr> */}
+ 
+
+  </table>
   {/* <ul>
   <div className='project'>
   { getData.map(dataItem => (<li key={dataItem.id}>
@@ -65,8 +95,8 @@ export default Home
   
          
  
- //</div>
-
+ </div>
+  )}
       
 
 
@@ -141,6 +171,6 @@ export default Home
 //       </div>
 //     )
 //   }
-// }
+ 
 
-// export default Home
+ export default Home
