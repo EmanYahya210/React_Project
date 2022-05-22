@@ -1,0 +1,17 @@
+
+
+.table{
+ 
+ table-layout:fixed;
+ background-color:antiquewhite;
+ text-align:center; 
+ border: 5px solid ;
+ max-width: 90%;
+ max-height: 900px;
+ margin-top: 1cm;
+ margin-bottom: 1cm;
+ margin-right: auto;
+ margin-left: auto;
+ 
+
+}

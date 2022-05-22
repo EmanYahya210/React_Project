@@ -12,7 +12,7 @@ import * as BiIcons from "react-icons/bi";
 
 export const SidebarData=[
  {
-     title :'Home',
+     title :'Tables With API',
      path : '/',
      icon : <AiIcons.AiFillHome />,
      cName:'nav-text',
