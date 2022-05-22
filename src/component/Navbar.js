@@ -26,7 +26,7 @@ function Navbar() {
         
         <div className='header_left' >
            
-            <h2 > Eye Controlled Game For The Disabled people Manual</h2>
+            <h2 className='title' > React.js Tutorial </h2>
         
     </div>
     </div>

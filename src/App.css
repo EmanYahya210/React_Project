@@ -9,11 +9,13 @@
 }
 
 .home{
-  display:contents;
+  text-align: center;
+  margin: 20px;
+  /* display:contents;
   height : 200vh;
   align-items:flex-start;
   justify-content:flex-start;
-  font-size: 1rem;
+  font-size: 1rem; */
 }
 
 .aboutUs,

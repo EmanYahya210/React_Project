@@ -3,7 +3,7 @@
 import './App.css';
 import Navbar from './component/Navbar';
 import {BrowserRouter, Route,Routes} from "react-router-dom";
-import Home from './pages/Home';
+import  Tables from './pages/TablesWithAPI';
 import Game from './pages/Game';
 import About_Us from './pages/About_Us';
 import ConnectWithUs from './pages/ConnectWithUs';
@@ -35,7 +35,7 @@ function App() {
       
        <Routes >
   
-       <Route path='/' element={<Home />} />
+       <Route path='/' element={< Tables />} />
        <Route path='/aboutUs' element={<About_Us />}  />
        <Route path='/game' element={<Game />} />
        <Route path='/connectWithUs' element={<ConnectWithUs />} />
