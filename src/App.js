@@ -20,16 +20,9 @@ import axios from 'axios'
 // import ConnectWithUs from './pages/ConnectWithUs';
 function App() {
 
-  const [getData, setgetData]=useState([])
-
-  useEffect(() =>{
-    axios.get("https://api.github.com/users/ariv797/repos")
-    .then(showData =>{
-      console.log(showData)
-      setgetData(showData.data)
-    })
   
-  })
+
+ 
   return (
     <>
    
@@ -37,11 +30,12 @@ function App() {
       <BrowserRouter>
       
       <Navbar /> 
+    
 
       
        <Routes >
   
-       <Route path='/'  element = {<Home />} />
+       <Route path='/' element={<Home />} />
        <Route path='/aboutUs' element={<About_Us />}  />
        <Route path='/game' element={<Game />} />
        <Route path='/connectWithUs' element={<ConnectWithUs />} />

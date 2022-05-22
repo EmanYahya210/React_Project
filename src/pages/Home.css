@@ -1,27 +1,26 @@
 
-.project{
-   background-color:bisque;
+.table {
+     table-layout:fixed;
+    background-color:rgba(233, 150, 122, 0.471);
+    color: black;
+    text-align: left; 
   
-     align-items: center;  
-}
+    border: 1px solid #060b26;
+   
+    width: 70%;
+    padding: 2px ;
+    margin-right: auto;
+    margin-left: auto;
+  
+  }
+  
+  table th,table td,table tr  
+  {
+    border: 1px solid #260606;
+    height:20px;
+    overflow:hidden;
+    white-space: normal;
+    text-overflow: ellipsis ;
+  }
 
-.eman{
-    color: brown;
-    align-items:center;
-}
 
-
-    table, th, td {
-        border:1px solid black;
-      
-      }
-
-      .table{
-        
-          width: 80%;
-      }
-      .disc{
-          
-          width: 70%;
-      }
-     
