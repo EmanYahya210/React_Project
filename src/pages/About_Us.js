@@ -1,11 +1,12 @@
 import React from 'react'
+import {Switch} from 'antd'
 
-function About_Us() {
+function AboutUs() {
   return (
     <div className='aboutUs'>
-        <h1>About_Us</h1>
+        <Switch />
     </div>
   )
 }
 
-export default About_Us
+export default AboutUs
