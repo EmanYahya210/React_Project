@@ -1,12 +1,10 @@
 
 import './App.css';
-import Navbar from './component/Navbar'
 import {BrowserRouter, Route,Routes} from "react-router-dom";
-import Home from './pages/Home'
-import AboutUs from './pages/About_Us';
-import APIdata from './pages/TabelsWithAPI';
-
-
+import Navbar from './component/NavBar/Navbar';
+import Home from './pages/Home/Home';
+import APIdata from './pages/API/API';
+import AboutUs from './pages/AboutUs/AboutUs';
 function App() {
 
   return (

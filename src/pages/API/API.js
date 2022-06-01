@@ -1,9 +1,10 @@
 
 
 import React from "react";
-import AxiosDes from "../Axios/AxiosDesc/index";
-import Tables from "../Axios/Tables";
-import {gitHubUrl,gitHubUrl2,gitHubUrl3} from './constatn'
+import Tables from "../../component/Tables/Tables";
+import {gitHubUrl,gitHubUrl2,gitHubUrl3} from '../../constatn'
+import ApiDes from "../../Fixed Data/apiPageIntro";
+
 
 
 const APIdata = () =>
@@ -11,7 +12,7 @@ const APIdata = () =>
 return(
  <div>  
     
-< AxiosDes  />
+ <ApiDes />
  <Tables URL={gitHubUrl}/>
  <Tables URL={gitHubUrl2}/>
  <Tables URL={gitHubUrl3}/>

@@ -34,6 +34,14 @@ export const SpanDesc = styled.span`
  font-weight: bold;
   color: #8B008B;
 ` 
+
+
+export const ProjectNote=styled.h4`
+font-size: 35px;
+    color: #8B008B;
+    margin-bottom: 20px;
+` 
+
   
 
 
