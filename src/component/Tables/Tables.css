@@ -15,3 +15,19 @@
  
 
 }
+
+.SpanToShowData{
+    font-weight: bold;
+    color: #8B008B;
+    font-size: larger;
+}
+.SwitchButton{
+ width: 5%;
+ margin-left:5cm;
+ background-color: #8B008B;
+ 
+}
+
+
+
+
