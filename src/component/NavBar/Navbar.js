@@ -28,7 +28,7 @@ import {Logo, NavbarSection ,LogoText ,UlList,ListItem, Linkk,Container} from '.
 
             <ListItem>
               <Link to = '/AboutUs'>
-                <Linkk>About Us</Linkk>
+                <Linkk>Redux</Linkk>
               </Link>
             </ListItem>
         </UlList>
